@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Responsive Sticky Navbar</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="main.css">
+</head>
+<body>
+      <div class="wrapper">
+        <nav>
+            <div class="logo">
+                    LOGO
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">entrar</a></li>
+                <li><a href="#">cadastrar</a></li>
+            </ul>
+        </nav>
+            
+      </div>
+
+    <section class="sec1">
+        <div class="header_wrapper">
+            <h2>O que você está procurando?</h2>
+            <a href="#" class="btn_primary">Procuro por um serviço</a> <a href="#" class="btn_secondary">Eu quero um serviço</a>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="welcome">
+                    <h2>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o
+                    século XVI.
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 promo_card">
+                <div class="text-center promo_icon">
+                    <i class="fa fa-users"></i>
+                </div>
+                <div class="promo_title">
+                    <h5>Titulo da promo</h5>
+                </div>
+                <div class="promo_text">
+                     <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o
+                    século XVI.</p>
+                </div>
+
+            </div>
+            <div class="col-3 promo_card delay-1">
+                <div class="text-center promo_icon">
+                    <i class="fa fa-users"></i>
+                </div>
+                <div class="promo_title">
+                    <h5>Titulo da promo</h5>
+                </div>
+                <div class="promo_text">
+                    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado
+                        desde o século XVI.</p>
+                </div>
+            </div>
+            <div class="col-3 promo_card delay-2">
+                <div class="text-center promo_icon">
+                    <i class="fa fa-users"></i>
+                </div>
+                <div class="promo_title">
+                    <h5>Titulo da promo</h5>
+                </div>
+                <div class="promo_text">
+                    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado
+                        desde o século XVI.</p>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+</body>
+<script type="text/javascript">
+    // Menu-toggle button
+    $(document).ready(function () {
+        $(".menu-icon").on("click", function () {
+            $("nav ul").toggleClass("showing");
+        });
+    });
+    // Scrolling Effect
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+            $('nav').addClass('black');
+        }
+
+        else {
+            $('nav').removeClass('black');
+        }
+    })
+</script>
+</html>
